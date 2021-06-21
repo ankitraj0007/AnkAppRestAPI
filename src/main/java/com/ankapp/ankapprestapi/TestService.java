@@ -1,5 +1,6 @@
 package com.ankapp.ankapprestapi;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestService {
 
     @RequestMapping(method = RequestMethod.GET)
+    @CrossOrigin(origins = "https://ankapp123.herokuapp.com")
     public String test(){
         return "Test Success";
     }
