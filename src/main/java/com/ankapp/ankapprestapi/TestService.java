@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestService {
 
     @RequestMapping(method = RequestMethod.GET)
-    @CrossOrigin(origins = "https://ankapp123.herokuapp.com")
+    @CrossOrigin(origins = {"https://ankapp123.herokuapp.com", "http://localhost:4200"})
     public String test(){
         return "Test Success";
     }
